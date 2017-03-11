@@ -1,0 +1,25 @@
+{
+  "name": "influence",
+  "version": "1.0.0",
+  "description": "Show who you're influenced by most and connect who they are influenced by.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack-dev-server"
+  },
+  "author": "Brandon Max",
+  "license": "ISC",
+  "devDepdencies": {
+    "webpack-dev-server": "2.4.1",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "d3": "^4.7.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-env": "^1.2.1",
+    "webpack": "^2.2.1"
+  }
+}
