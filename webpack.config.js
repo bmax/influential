@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
   entry: './app/index.js',
@@ -18,5 +19,12 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+      new webpack.NoEmitOnErrorsPlugin()
+  ],
+  stats: {
+      colors: true
+  },
+  devtool: 'source-map',
   devServer: { contentBase: path.join(__dirname, "dist"), inline: true }
 };
